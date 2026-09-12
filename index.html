@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Evangelou Garden Centre — Website Concept</title>
+
+<style>
+:root{
+  --forest:#18391f;
+  --leaf:#6c9d45;
+  --cream:#f4f0e5;
+  --ink:#172117;
+  --gold:#d7b76a;
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+.nav{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(244,240,229,.96);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:18px 6vw;
+  border-bottom:1px solid #d9d5c9;
+}
+
+.logo{
+  font-weight:900;
+  letter-spacing:.08em;
+  color:var(--forest);
+}
+
+.logo span{
+  color:var(--leaf);
+}
+
+.nav a{
+  color:var(--forest);
+  text-decoration:none;
+  margin-left:24px;
+  font-size:12px;
+  font-weight:700;
+}
+
+.hero{
+  min-height:84vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  background:var(--forest);
+  color:white;
+}
+
+.copy{
+  padding:9vw 7vw;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.eyebrow{
+  font-size:11px;
+  letter-spacing:.22em;
+  font-weight:800;
+  color:#b8d493;
+}
+
+.hero h1{
+  font-family:Georgia,serif;
+  font-size:clamp(48px,7vw,96px);
+  font-weight:400;
+  line-height:.94;
+  margin:20px 0;
+}
+
+.hero p{
+  font-size:18px;
+  line-height:1.7;
+  color:#dce5d8;
+  max-width:560px;
+}
+
+.btn{
+  display:inline-block;
+  background:#d9c276;
+  color:#17351d;
+  padding:15px 22px;
+  text-decoration:none;
+  font-weight:800;
+  margin-top:20px;
+  width:max-content;
+}
+
+.visual{
+  background:
+    linear-gradient(rgba(22,55,28,.05),rgba(22,55,28,.2)),
+    url("evangelou_garden_centre_homepage.png");
+  background-size:cover;
+  background-position:center top;
+  min-height:600px;
+}
+
+.section{
+  padding:95px 7vw;
+}
+
+.section h2{
+  font-family:Georgia,serif;
+  font-weight:400;
+  font-size:clamp(40px,5vw,68px);
+  margin:10px 0 22px;
+  color:var(--forest);
+}
+
+.lead{
+  font-size:18px;
+  line-height:1.7;
+  max-width:760px;
+  color:#5d665a;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:45px;
+}
+
+.card{
+  background:white;
+  border:1px solid #ddd8ca;
+  padding:32px;
+  min-height:220px;
+}
+
+.card small{
+  color:var(--leaf);
+  font-weight:900;
+  letter-spacing:.15em;
+}
+
+.card h3{
+  font-family:Georgia,serif;
+  font-size:27px;
+  font-weight:400;
+}
+
+.card p{
+  line-height:1.6;
+  color:#697066;
+}
+
+.concept{
+  background:#e7e1d3;
+}
+
+.concept img{
+  width:100%;
+  display:block;
+  box-shadow:0 25px 60px rgba(28,35,25,.15);
+  margin-top:38px;
+}
+
+.dark{
+  background:#112b18;
+  color:white;
+}
+
+.dark h2{
+  color:white;
+}
+
+.dark .lead{
+  color:#c8d3c5;
+}
+
+.features{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px 50px;
+  margin-top:40px;
+}
+
+.feature{
+  border-bottom:1px solid rgba(255,255,255,.18);
+  padding:15px 0;
+  font-weight:700;
+}
+
+.cta{
+  text-align:center;
+  background:#d8c27b;
+  padding:90px 7vw;
+}
+
+.cta h2{
+  font-family:Georgia,serif;
+  font-weight:400;
+  font-size:clamp(40px,5vw,68px);
+  max-width:850px;
+  margin:0 auto 20px;
+}
+
+.footer{
+  background:#0b1d10;
+  color:#aebaaa;
+  padding:28px 7vw;
+  display:flex;
+  justify-content:space-between;
+  font-size:12px;
+}
+
+.footer b{
+  color:white;
+}
+
+@media(max-width:800px){
+  .links{display:none}
+  .hero{grid-template-columns:1fr}
+  .visual{min-height:430px}
+  .cards{grid-template-columns:1fr}
+  .features{grid-template-columns:1fr}
+  .footer{flex-direction:column;gap:12px}
+}
+</style>
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="logo">EVANGELOU <span>GARDEN CENTRE</span></div>
+
+  <nav class="links">
+    <a href="#about">ABOUT</a>
+    <a href="#services">SERVICES</a>
+    <a href="#concept">CONCEPT</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="copy">
+    <div class="eyebrow">GARDEN CENTRE · PLANTS · OUTDOOR LIVING</div>
+
+    <h1>
+      Where gardens<br>
+      come to life.
+    </h1>
+
+    <p>
+      A fresh digital direction for Evangelou Garden Centre —
+      designed to turn its products, expertise and love of greenery
+      into an inviting online experience.
+    </p>
+
+    <a class="btn" href="#concept">
+      EXPLORE THE CONCEPT →
+    </a>
+  </div>
+
+  <div class="visual"></div>
+</section>
+
+
+<section class="section" id="about">
+
+  <div class="eyebrow" style="color:#648d46">
+    THE DIGITAL OPPORTUNITY
+  </div>
+
+  <h2>More than a garden centre.</h2>
+
+  <p class="lead">
+    The website should immediately communicate inspiration,
+    expertise and variety. A warmer, highly visual experience
+    can help customers discover plants and garden solutions
+    before they even arrive.
+  </p>
+
+  <div class="cards" id="services">
+
+    <div class="card">
+      <small>01 / DISCOVER</small>
+      <h3>Plants & Greenery</h3>
+      <p>
+        Present seasonal plants, trees and greenery through an
+        attractive, easy-to-explore visual catalogue.
+      </p>
+    </div>
+
+    <div class="card">
+      <small>02 / CREATE</small>
+      <h3>Garden Solutions</h3>
+      <p>
+        Show customers how products and professional knowledge
+        can come together to transform outdoor spaces.
+      </p>
+    </div>
+
+    <div class="card">
+      <small>03 / INSPIRE</small>
+      <h3>Outdoor Living</h3>
+      <p>
+        Build inspiration around gardens, landscaping ideas,
+        accessories and the Mediterranean outdoor lifestyle.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section concept" id="concept">
+
+  <div class="eyebrow" style="color:#648d46">
+    INITIAL HOMEPAGE DIRECTION
+  </div>
+
+  <h2>A visual-first experience.</h2>
+
+  <p class="lead">
+    This initial ADSolutions concept establishes the look and feel.
+    The production version would turn this direction into a fully
+    responsive website using approved Evangelou branding,
+    photography and business content.
+  </p>
+
+  <img
+    src="evangelou_garden_centre_homepage.png"
+    alt="Evangelou Garden Centre homepage concept"
+  >
+
+</section>
+
+
+<section class="section dark">
+
+  <div class="eyebrow">PROPOSED EXPERIENCE</div>
+
+  <h2>Built to turn interest into visits and enquiries.</h2>
+
+  <p class="lead">
+    The final website can combine strong visual storytelling
+    with practical customer journeys — from discovering products
+    to finding the centre and getting in touch.
+  </p>
+
+  <div class="features">
+
+    <div class="feature">✓ Responsive premium website</div>
+    <div class="feature">✓ Plant & product categories</div>
+
+    <div class="feature">✓ Seasonal highlights</div>
+    <div class="feature">✓ Gallery & inspiration</div>
+
+    <div class="feature">✓ Maps, opening hours & contact</div>
+    <div class="feature">✓ WhatsApp / enquiry journey</div>
+
+    <div class="feature">✓ Social media integration</div>
+    <div class="feature">✓ SEO-ready structure</div>
+
+  </div>
+</section>
+
+
+<section class="cta" id="contact">
+
+  <div class="eyebrow" style="color:#42562d">
+    EVANGELOU × ADSOLUTIONS
+  </div>
+
+  <h2>Ready to grow the brand online?</h2>
+
+  <p>
+    This is an initial website concept prepared specifically
+    for Evangelou Garden Centre.
+  </p>
+
+  <a
+    class="btn"
+    href="https://adsolutionsglobal.com"
+    target="_blank"
+    rel="noopener"
+  >
+    DISCUSS THE PROJECT →
+  </a>
+
+</section>
+
+
+<footer class="footer">
+
+  <div>
+    Concept preview for Evangelou Garden Centre · Not indexed publicly
+  </div>
+
+  <div>
+    <b>Powered by ADSolutions</b> · Strategy · Innovation · Growth
+  </div>
+
+</footer>
+
+</body>
+</html>
